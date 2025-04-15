@@ -32,8 +32,8 @@ const Index = () => {
             </div>
             <div className="md:w-1/2">
               <img 
-                src="https://images.unsplash.com/photo-1603748400967-2eb5f9ffcab5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="Women holding hands in unity" 
+                src="https://images.unsplash.com/photo-1573496528661-ad2b5ec9f1c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                alt="Women supporting each other" 
                 className="rounded-2xl shadow-xl animate-float"
               />
             </div>
@@ -135,7 +135,7 @@ const Index = () => {
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="md:w-1/2">
                 <img 
-                  src="https://images.unsplash.com/photo-1573496528661-ad2b5ec9f1c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
                   alt="Our team" 
                   className="rounded-2xl shadow-lg"
                 />
