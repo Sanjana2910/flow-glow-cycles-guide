@@ -129,6 +129,42 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Additional Images Section */}
+        <section className="py-16 bg-white px-4">
+          <div className="container mx-auto text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Menstrual & Menopausal Journey</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Explore visual resources to better understand your body's natural transitions.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 container mx-auto">
+            <div className="overflow-hidden rounded-2xl shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                alt="Woman using resources on laptop" 
+                className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
+              />
+              <div className="bg-white p-5">
+                <h3 className="text-xl font-semibold mb-2">Digital Learning Resources</h3>
+                <p className="text-gray-600">Access our comprehensive online resources at your own pace.</p>
+              </div>
+            </div>
+            
+            <div className="overflow-hidden rounded-2xl shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                alt="Serene nature scene" 
+                className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
+              />
+              <div className="bg-white p-5">
+                <h3 className="text-xl font-semibold mb-2">Natural Healing & Wellness</h3>
+                <p className="text-gray-600">Discover natural approaches to support your body through transitions.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* About Us Preview */}
         <section className="py-16 bg-white px-4">
           <div className="container mx-auto">
