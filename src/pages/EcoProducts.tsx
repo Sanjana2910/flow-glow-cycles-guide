@@ -464,19 +464,6 @@ const EcoProducts = () => {
             </div>
           </div>
           
-          {/* Add YouTube Video Section */}
-          <div className="max-w-4xl mx-auto my-16 bg-white p-6 rounded-2xl shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Learn More About Sustainable Products</h2>
-            <div className="aspect-w-16 aspect-h-9">
-              <iframe 
-                className="w-full h-[480px] rounded-xl shadow-md"
-                src="https://www.youtube.com/embed/QNZfEtZ53RY" 
-                title="Sustainable Products Information" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen>
-              </iframe>
-            </div>
-          </div>
         </div>
       </main>
 
