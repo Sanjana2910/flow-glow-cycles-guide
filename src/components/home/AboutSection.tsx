@@ -1,0 +1,35 @@
+
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+
+const AboutSection = () => {
+  return (
+    <section className="py-16 bg-white px-4">
+      <div className="container mx-auto">
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="md:w-1/2">
+            <img 
+              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+              alt="Our team" 
+              className="rounded-2xl shadow-lg"
+            />
+          </div>
+          <div className="md:w-1/2 space-y-6">
+            <h2 className="text-3xl font-bold text-gray-900">About FlowToGlow</h2>
+            <p className="text-lg text-gray-600">
+              We're a team of healthcare professionals, educators, and advocates passionate about breaking the stigma around menstrual and menopausal health through education and support.
+            </p>
+            <p className="text-lg text-gray-600">
+              Our mission is to empower through knowledge, creating a world where everyone understands and respects the natural processes of the body.
+            </p>
+            <Button asChild className="bg-flowPink-dark hover:bg-flowPink-dark/90">
+              <Link to="/about">Learn More About Us</Link>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutSection;
