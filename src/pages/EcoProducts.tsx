@@ -1,3 +1,4 @@
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SupportBot from "@/components/SupportBot";
@@ -302,13 +303,18 @@ const EcoProducts = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {menstrualProducts.map((product, index) => (
                   <Card key={index} className="overflow-hidden">
-                    <div className="h-48 overflow-hidden">
-                      <img 
-                        src={product.image} 
-                        alt={product.name} 
-                        className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
-                      />
-                    </div>
+                    {product.image && (
+                      <div className="h-48 overflow-hidden">
+                        <img 
+                          src={product.image} 
+                          alt={product.name} 
+                          className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                          onError={(e) => {
+                            e.currentTarget.src = "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
+                          }}
+                        />
+                      </div>
+                    )}
                     <CardHeader>
                       <div className="flex justify-between items-start">
                         <CardTitle>{product.name}</CardTitle>
@@ -354,13 +360,18 @@ const EcoProducts = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {menopausalProducts.map((product, index) => (
                   <Card key={index} className="overflow-hidden">
-                    <div className="h-48 overflow-hidden">
-                      <img 
-                        src={product.image} 
-                        alt={product.name} 
-                        className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
-                      />
-                    </div>
+                    {product.image && (
+                      <div className="h-48 overflow-hidden">
+                        <img 
+                          src={product.image} 
+                          alt={product.name} 
+                          className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                          onError={(e) => {
+                            e.currentTarget.src = "https://images.unsplash.com/photo-1582562124811-c09040d0a901?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
+                          }}
+                        />
+                      </div>
+                    )}
                     <CardHeader>
                       <div className="flex justify-between items-start">
                         <CardTitle>{product.name}</CardTitle>
