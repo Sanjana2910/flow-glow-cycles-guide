@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SupportBot from "@/components/SupportBot";
@@ -213,6 +212,15 @@ const EcoProducts = () => {
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Discover sustainable and body-safe products for menstrual and menopausal health that are better for you and the planet.
             </p>
+          </div>
+          
+          {/* Hero Image for Products Page */}
+          <div className="mb-16">
+            <img 
+              src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+              alt="Sustainable products concept" 
+              className="w-full h-80 object-cover rounded-2xl shadow-lg mx-auto"
+            />
           </div>
           
           <div className="max-w-3xl mx-auto mb-16">
@@ -453,6 +461,20 @@ const EcoProducts = () => {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+          
+          {/* Add YouTube Video Section */}
+          <div className="max-w-4xl mx-auto my-16 bg-white p-6 rounded-2xl shadow-sm">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Learn More About Sustainable Products</h2>
+            <div className="aspect-w-16 aspect-h-9">
+              <iframe 
+                className="w-full h-[480px] rounded-xl shadow-md"
+                src="https://www.youtube.com/embed/QNZfEtZ53RY" 
+                title="Sustainable Products Information" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+              </iframe>
             </div>
           </div>
         </div>

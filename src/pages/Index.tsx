@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
@@ -109,7 +108,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* YouTube Video Section */}
+        {/* YouTube Video Section - Updated with new video */}
         <section className="py-16 bg-flowPink-light/50 px-4">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Watch & Learn</h2>
@@ -120,8 +119,8 @@ const Index = () => {
             <div className="max-w-4xl mx-auto aspect-w-16 aspect-h-9">
               <iframe 
                 className="w-full h-[480px] rounded-2xl shadow-lg"
-                src="https://www.youtube.com/embed/3tk9fZ2FmjQ" 
-                title="Understanding Your Menstrual Cycle" 
+                src="https://www.youtube.com/embed/QNZfEtZ53RY" 
+                title="Understanding Mental Health & Hormonal Changes" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowFullScreen>
               </iframe>
