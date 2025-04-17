@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SupportBot from "@/components/SupportBot";
+import { Book, Heart } from "lucide-react";
 
 const Index = () => {
   return (
@@ -29,12 +30,20 @@ const Index = () => {
                 </Button>
               </div>
             </div>
-            <div className="md:w-1/2">
-              <img 
-                src="https://images.unsplash.com/photo-1573496528661-ad2b5ec9f1c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="Women supporting each other" 
-                className="rounded-2xl shadow-xl animate-float"
-              />
+            <div className="md:w-1/2 flex items-center justify-center">
+              <div className="relative">
+                <img 
+                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7" 
+                  alt="Women supporting each other" 
+                  className="rounded-2xl shadow-xl animate-float max-w-full h-auto"
+                />
+                <div className="absolute top-4 right-4 bg-white/80 rounded-full p-4 shadow-md">
+                  <Book className="text-flowPink-dark w-12 h-12" />
+                </div>
+                <div className="absolute bottom-4 left-4 bg-white/80 rounded-full p-4 shadow-md">
+                  <Heart className="text-flowPurple-dark w-12 h-12" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
