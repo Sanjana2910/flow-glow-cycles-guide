@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SupportBot from "@/components/SupportBot";
@@ -10,7 +9,7 @@ const EcoProducts = () => {
   const menstrualProducts = [
     {
       name: "Menstrual Cups",
-      image: "https://images.unsplash.com/photo-1620030669380-b5ab35bfe636?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1631729779674-1f369e1116b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
       description: "Reusable silicone cups that collect menstrual flow. They can be worn for up to 12 hours and last for several years with proper care.",
       benefits: [
         "Significantly reduces waste compared to disposable products",
@@ -29,7 +28,7 @@ const EcoProducts = () => {
     },
     {
       name: "Period Underwear",
-      image: "https://images.unsplash.com/photo-1602810319250-a663f0af2f75?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1582169296194-e4d644c48063?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       description: "Absorbent, leak-proof underwear designed to be worn during menstruation without additional products. They can hold multiple tampons' worth of flow depending on the style.",
       benefits: [
         "Comfortable and feels like regular underwear",
@@ -48,7 +47,7 @@ const EcoProducts = () => {
     },
     {
       name: "Reusable Cloth Pads",
-      image: "https://images.unsplash.com/photo-1624291672669-5cd8cdf77636?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       description: "Washable cloth pads made from absorbent fabrics like cotton, hemp, or bamboo. They attach to underwear with snaps or other fasteners.",
       benefits: [
         "Soft and comfortable against skin",
@@ -67,7 +66,7 @@ const EcoProducts = () => {
     },
     {
       name: "Biodegradable Tampons & Pads",
-      image: "https://images.unsplash.com/photo-1565954787439-b0a0a5724a09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1591001120895-0ac089e30c3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       description: "Disposable products made from organic cotton and other biodegradable materials, without synthetic additives, plastic, or chemicals.",
       benefits: [
         "Familiar format with eco-friendly materials",
@@ -86,7 +85,7 @@ const EcoProducts = () => {
     },
     {
       name: "Menstrual Discs",
-      image: "https://images.unsplash.com/photo-1612273481523-9e70fd4bd842?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1628259610420-f51d562b81aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       description: "Flexible discs that sit in the vaginal fornix (rather than the canal) and collect menstrual flow. Available in both reusable and disposable versions.",
       benefits: [
         "Can be worn for up to 12 hours",
@@ -108,7 +107,7 @@ const EcoProducts = () => {
   const menopausalProducts = [
     {
       name: "Cooling Bedding & Sleepwear",
-      image: "https://images.unsplash.com/photo-1592789705501-f9ae4287c449?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1629585174139-46ce4c13f489?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       description: "Bedding and pajamas made from temperature-regulating fabrics like bamboo, eucalyptus lyocell, or specially designed cooling textiles to help manage night sweats.",
       benefits: [
         "Helps regulate body temperature during sleep",
@@ -126,7 +125,7 @@ const EcoProducts = () => {
     },
     {
       name: "Plant-Based Supplements",
-      image: "https://images.unsplash.com/photo-1595446459017-fc436d3caedd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1611241893603-3c359704e0ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       description: "Supplements derived from plants like black cohosh, red clover, or phytoestrogen-rich foods that may help manage menopausal symptoms through natural compounds.",
       benefits: [
         "Natural alternative to hormone therapy for some women",
@@ -145,7 +144,7 @@ const EcoProducts = () => {
     },
     {
       name: "Natural Lubricants",
-      image: "https://images.unsplash.com/photo-1614295371245-4c52e6ece5d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1584308878768-57d3e6f8b532?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       description: "Vaginal moisturizers and lubricants made from plant-based ingredients without synthetic fragrances, parabens, or petrochemicals to address vaginal dryness.",
       benefits: [
         "Addresses common menopausal symptoms",
@@ -164,7 +163,7 @@ const EcoProducts = () => {
     },
     {
       name: "Reusable Cooling Products",
-      image: "https://images.unsplash.com/photo-1559702439-8bdaa97a2a34?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1532188363366-3a1b2ac4d49b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       description: "Reusable neck wraps, cooling scarves, and fans made from sustainable materials to help manage hot flashes without disposable products.",
       benefits: [
         "Immediate relief for hot flashes",
@@ -183,7 +182,7 @@ const EcoProducts = () => {
     },
     {
       name: "Plastic-Free Personal Care",
-      image: "https://images.unsplash.com/photo-1602824343720-f7a5e6590d75?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "https://images.unsplash.com/photo-1584949602334-4e99f98286a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       description: "Soaps, deodorants, and skincare products in plastic-free packaging designed for sensitive skin and changing skin needs during menopause.",
       benefits: [
         "Reduces plastic waste",
