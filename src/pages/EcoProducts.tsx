@@ -214,15 +214,6 @@ const EcoProducts = () => {
             </p>
           </div>
           
-          {/* Hero Image for Products Page */}
-          <div className="mb-16">
-            <img 
-              src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-              alt="Sustainable products concept" 
-              className="w-full h-80 object-cover rounded-2xl shadow-lg mx-auto"
-            />
-          </div>
-          
           <div className="max-w-3xl mx-auto mb-16">
             <div className="bg-white p-6 rounded-2xl shadow-sm">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Choose Eco-Friendly Options?</h2>
@@ -301,19 +292,7 @@ const EcoProducts = () => {
             <TabsContent value="menstrual" className="animate-fade-in">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {menstrualProducts.map((product, index) => (
-                  <Card key={index} className="overflow-hidden">
-                    {product.image && (
-                      <div className="h-48 overflow-hidden">
-                        <img 
-                          src={product.image} 
-                          alt={product.name} 
-                          className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
-                          onError={(e) => {
-                            e.currentTarget.src = "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
-                          }}
-                        />
-                      </div>
-                    )}
+                  <Card key={index} className="flex flex-col">
                     <CardHeader>
                       <div className="flex justify-between items-start">
                         <CardTitle>{product.name}</CardTitle>
@@ -321,7 +300,7 @@ const EcoProducts = () => {
                       </div>
                       <CardDescription>{product.description}</CardDescription>
                     </CardHeader>
-                    <CardContent className="space-y-4">
+                    <CardContent className="space-y-4 flex-grow">
                       <div>
                         <h4 className="font-medium text-gray-900 mb-2">Benefits</h4>
                         <ul className="space-y-1 text-sm text-gray-600">
@@ -344,7 +323,7 @@ const EcoProducts = () => {
                         </ul>
                       </div>
                     </CardContent>
-                    <CardFooter className="bg-flowPink-light/20 border-t border-flowPink-light/30">
+                    <CardFooter className="bg-flowPink-light/20 border-t border-flowPink-light/30 mt-auto">
                       <div>
                         <h4 className="font-medium text-gray-900 mb-1">Environmental Impact</h4>
                         <p className="text-sm text-gray-600">{product.eco_impact}</p>
@@ -358,19 +337,7 @@ const EcoProducts = () => {
             <TabsContent value="menopausal" className="animate-fade-in">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {menopausalProducts.map((product, index) => (
-                  <Card key={index} className="overflow-hidden">
-                    {product.image && (
-                      <div className="h-48 overflow-hidden">
-                        <img 
-                          src={product.image} 
-                          alt={product.name} 
-                          className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
-                          onError={(e) => {
-                            e.currentTarget.src = "https://images.unsplash.com/photo-1582562124811-c09040d0a901?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80";
-                          }}
-                        />
-                      </div>
-                    )}
+                  <Card key={index} className="flex flex-col">
                     <CardHeader>
                       <div className="flex justify-between items-start">
                         <CardTitle>{product.name}</CardTitle>
@@ -378,7 +345,7 @@ const EcoProducts = () => {
                       </div>
                       <CardDescription>{product.description}</CardDescription>
                     </CardHeader>
-                    <CardContent className="space-y-4">
+                    <CardContent className="space-y-4 flex-grow">
                       <div>
                         <h4 className="font-medium text-gray-900 mb-2">Benefits</h4>
                         <ul className="space-y-1 text-sm text-gray-600">
@@ -401,7 +368,7 @@ const EcoProducts = () => {
                         </ul>
                       </div>
                     </CardContent>
-                    <CardFooter className="bg-flowPurple-light/20 border-t border-flowPurple-light/30">
+                    <CardFooter className="bg-flowPurple-light/20 border-t border-flowPurple-light/30 mt-auto">
                       <div>
                         <h4 className="font-medium text-gray-900 mb-1">Environmental Impact</h4>
                         <p className="text-sm text-gray-600">{product.eco_impact}</p>
