@@ -9,7 +9,7 @@ const EcoProducts = () => {
   const menstrualProducts = [
     {
       name: "Menstrual Cups",
-      image: "https://images.unsplash.com/photo-1631729779674-1f369e1116b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+      image: "public/lovable-uploads/ee7eed88-b1ea-42b4-89cd-615eecda6fc7.png",
       description: "Reusable silicone cups that collect menstrual flow. They can be worn for up to 12 hours and last for several years with proper care.",
       benefits: [
         "Significantly reduces waste compared to disposable products",
@@ -28,7 +28,7 @@ const EcoProducts = () => {
     },
     {
       name: "Period Underwear",
-      image: "https://images.unsplash.com/photo-1582169296194-e4d644c48063?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "public/lovable-uploads/2c2d85cb-6859-475f-9997-19b674aa5eee.png",
       description: "Absorbent, leak-proof underwear designed to be worn during menstruation without additional products. They can hold multiple tampons' worth of flow depending on the style.",
       benefits: [
         "Comfortable and feels like regular underwear",
@@ -47,7 +47,7 @@ const EcoProducts = () => {
     },
     {
       name: "Reusable Cloth Pads",
-      image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "public/lovable-uploads/d9983d0b-35ae-4a18-8b9c-86dd612e247b.png",
       description: "Washable cloth pads made from absorbent fabrics like cotton, hemp, or bamboo. They attach to underwear with snaps or other fasteners.",
       benefits: [
         "Soft and comfortable against skin",
