@@ -1,10 +1,41 @@
 
-import { Youtube, Users, Sparkles } from "lucide-react";
+import { Youtube, Users, Sparkles, MessageSquare, Handshake, BookHeart, HeartHandshake } from "lucide-react";
+
+const menEducationPoints = [
+  {
+    icon: <MessageSquare className="w-8 h-8 text-flowPurple-dark" />,
+    title: "Open Conversations",
+    desc: "Encourage honest discussions about menstrual and menopausal health, reducing shame and stigma together.",
+    color: "from-flowPurple-light to-flowPink-dark",
+    animation: "animate-float",
+  },
+  {
+    icon: <Handshake className="w-8 h-8 text-flowPink-dark" />,
+    title: "Show Empathy",
+    desc: "Practice empathy—listen, ask how to help, and acknowledge the challenges women face during each phase.",
+    color: "from-flowPink-light to-flowPurple-dark",
+    animation: "animate-fade-in",
+  },
+  {
+    icon: <BookHeart className="w-8 h-8 text-flowPurple-dark" />,
+    title: "Educate Yourself",
+    desc: "Learn the basics of cycles and menopause to offer better emotional and practical support.",
+    color: "from-[#FEC6A1] to-[#E5DEFF]", // pastel orange/purple
+    animation: "animate-float",
+  },
+  {
+    icon: <HeartHandshake className="w-8 h-8 text-flowPink-dark" />,
+    title: "Fight Stigma",
+    desc: "Be an ally by challenging myths, speaking up, and fostering respect in all environments.",
+    color: "from-[#FEF7CD] to-[#FFDEE2]", // pastel yellow/pink
+    animation: "animate-fade-in",
+  },
+];
 
 const VideoSection = () => {
   return (
     <section className="py-16 bg-flowPink-light/50 px-4 relative overflow-hidden">
-      {/* Animated gradient blobs */}
+      {/* Animated gradient blobs and floating sparkles for extra color pop */}
       <span
         className="hidden md:block absolute top-6 left-4 w-64 h-64 rounded-full bg-flowPurple-light blur-3xl opacity-40 animate-float"
         style={{ animationDuration: "4s" }}
@@ -15,9 +46,20 @@ const VideoSection = () => {
         style={{ animationDuration: "5s", animationDelay: "0.8s" }}
         aria-hidden="true"
       />
+      {/* Plus some animated smaller dots/blobs for added activity */}
+      <span
+        className="absolute left-12 top-32 w-10 h-10 rounded-full bg-[#FEC6A1]/60 blur-lg opacity-80 animate-float z-10"
+        style={{ animationDuration: "2.5s", animationDelay: "1s" }}
+        aria-hidden="true"
+      />
+      <span
+        className="absolute right-24 bottom-16 w-8 h-8 rounded-full bg-[#FEF7CD]/70 blur-md opacity-80 animate-float z-10"
+        style={{ animationDuration: "2.1s", animationDelay: "1.2s" }}
+        aria-hidden="true"
+      />
       {/* Sparkles icon as floating accent */}
       <span
-        className="absolute bottom-10 left-8 text-flowPurple-dark opacity-50 animate-float"
+        className="absolute bottom-10 left-8 text-flowPurple-dark opacity-60 animate-float"
         style={{ animationDuration: "6s", animationDelay: "1.5s" }}
         aria-hidden="true"
       >
@@ -30,12 +72,13 @@ const VideoSection = () => {
         </p>
 
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto animate-fade-in">
+          {/* Video Section with Updated YouTube Link */}
           <div className="aspect-w-16 aspect-h-9 relative">
             {/* Animated border around video */}
             <div className="absolute -inset-2 z-0 rounded-3xl bg-gradient-to-tr from-flowPink-dark/70 via-flowPurple-dark/60 to-flowPink-light/80 blur-lg opacity-55 animate-pulse" />
             <iframe
               className="w-full h-[300px] rounded-2xl shadow-lg relative z-10"
-              src="https://www.youtube.com/embed/7HlHGLr1hTA"
+              src="https://www.youtube.com/embed/7HlHGLr1hTA?si=nxltUnjlRYQdxS7E"
               title="Understanding Menstrual and Menopausal Health"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -46,36 +89,54 @@ const VideoSection = () => {
             </span>
           </div>
 
-          <div className="text-left space-y-6 relative z-10">
+          {/* NEW: Men’s Educational Grid with color and motion */}
+          <div className="text-left space-y-8 relative z-10">
             {/* Decorative icon + label */}
             <div className="inline-flex items-center gap-2 text-flowPink-dark font-medium animate-fade-in">
               <Youtube className="w-6 h-6" />
               <span>Educational Video</span>
             </div>
-
             <h3 className="text-2xl font-semibold text-gray-900 animate-fade-in">
-              Men's Role in Supporting Menstrual and Menopausal Health
+              Men: How You Can Support <span className="text-flowPink-dark">Menstrual</span> & <span className="text-flowPurple-dark">Menopausal</span> Health
             </h3>
 
-            <div className="space-y-4 text-gray-600 animate-fade-in">
-              <p>
-                Understanding menstrual and menopausal health is crucial for men to provide better support to the women in their lives. By learning about these natural processes, men can:
-              </p>
-              <ul className="space-y-2 list-disc pl-5">
-                <li>Foster more empathetic relationships</li>
-                <li>Provide appropriate emotional and practical support</li>
-                <li>Help break down stigma and misconceptions</li>
-                <li>Create more inclusive environments at work and home</li>
-              </ul>
-              <p>
-                Watch this informative video to better understand how men can be supportive partners, family members, and allies in menstrual and menopausal health conversations.
-              </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {menEducationPoints.map((pt, i) => (
+                <div
+                  key={i}
+                  className={`rounded-xl shadow-lg bg-gradient-to-br ${pt.color} p-5 min-h-[160px] flex items-start gap-4 relative overflow-hidden group transition-transform duration-300 hover:scale-105 ${pt.animation}`}
+                  style={{
+                    animationDelay: `${(i % 2) * 0.15 + 0.1}s`,
+                    animationDuration: "1.1s",
+                  }}
+                >
+                  <span className="flex-none">{pt.icon}</span>
+                  <span>
+                    <div className="font-semibold text-lg mb-1 text-gray-800">{pt.title}</div>
+                    <div className="text-gray-700 text-sm">{pt.desc}</div>
+                  </span>
+                  {/* Animated sparkle as extra "pop" on hover */}
+                  <span className="absolute bottom-2 right-2 opacity-0 group-hover:opacity-80 transition-opacity duration-300">
+                    <Sparkles className="w-7 h-7 text-white/80" />
+                  </span>
+                </div>
+              ))}
             </div>
+            {/* End Grid */}
+
             {/* Floating users icon as a visual accent */}
             <span className="absolute -right-10 bottom-2 text-flowPink-dark opacity-40 animate-float hidden md:block" style={{ animationDuration: "5s", animationDelay: "2s" }}>
               <Users className="w-14 h-14" />
             </span>
           </div>
+        </div>
+        {/* Under the grid: Additional callout for men */}
+        <div className="mt-12 text-base max-w-xl mx-auto px-2 text-center text-flowPurple-dark animate-fade-in">
+          <span className="inline-flex items-center gap-2 font-semibold">
+            <Sparkles className="w-6 h-6" /> 
+            Even simple acts—like listening, learning, and speaking up—can have a huge impact. 
+            <Sparkles className="w-6 h-6" />
+          </span>
         </div>
       </div>
     </section>
