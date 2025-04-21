@@ -88,11 +88,11 @@ const cards = [
     link: "/predictions",
     linkText: "Track Now",
     gradientClass: "bg-gradient-to-b from-flowPink-light to-white",
-    buttonClass: "border-flowPink-dark text-flowPink-dark hover:bg-flowPink-light",
+    buttonClass: "border-flowPink-dark text-white bg-gradient-to-r from-flowPink-dark to-flowPink-light hover:from-flowPink-light hover:to-flowPink-dark",
   },
   {
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-flowPurple-dark">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-flowPurple-dark">
         <path d="M17 7.83a4 4 0 1 1 0 8.34"></path>
         <path d="M7 7.83a4 4 0 1 0 0 8.34"></path>
         <rect width="6" height="12" x="9" y="6" rx="3"></rect>
@@ -103,11 +103,11 @@ const cards = [
     link: "/myths-facts",
     linkText: "Learn Facts",
     gradientClass: "bg-gradient-to-b from-flowPurple-light to-white",
-    buttonClass: "border-flowPurple-dark text-flowPurple-dark hover:bg-flowPurple-light",
+    buttonClass: "border-flowPurple-dark text-white bg-gradient-to-r from-flowPurple-dark to-flowPurple-light hover:from-flowPurple-light hover:to-flowPurple-dark",
   },
   {
     icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-flowPink-dark">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-flowPink-dark">
         <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path>
         <polyline points="10 2 10 12 12 10 14 12 14 2"></polyline>
       </svg>
@@ -117,7 +117,7 @@ const cards = [
     link: "/menopause",
     linkText: "Explore Resources",
     gradientClass: "bg-gradient-to-b from-flowPink-light to-white",
-    buttonClass: "border-flowPink-dark text-flowPink-dark hover:bg-flowPink-light",
+    buttonClass: "border-flowPink-dark text-white bg-gradient-to-r from-flowPink-dark to-flowPink-light hover:from-flowPink-light hover:to-flowPink-dark",
   },
 ];
 
@@ -136,7 +136,7 @@ const FeatureCard = ({ cardIndex }: FeatureCardProps) => {
       <p className="text-gray-600 mb-6">
         {card.description}
       </p>
-      <Button asChild variant="outline" className={card.buttonClass}>
+      <Button asChild variant="default" className={`${card.buttonClass} transition-colors`}>
         <Link to={card.link}>{card.linkText}</Link>
       </Button>
     </div>

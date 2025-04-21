@@ -55,10 +55,10 @@ const HeroSection = () => {
             FlowToGlow helps you understand your body better through cycle tracking, education, and community support.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in" style={{ animationDelay: "0.85s" }}>
-            <Button asChild className="bg-flowPink-dark hover:bg-flowPink-dark/90">
+            <Button asChild className="bg-gradient-to-r from-flowPink-light to-flowPink-dark text-white hover:from-flowPink-dark hover:to-flowPink-light transition-colors">
               <Link to="/predictions">Track Your Cycle</Link>
             </Button>
-            <Button asChild variant="outline" className="border-flowPink-dark text-flowPink-dark hover:bg-flowPink-light">
+            <Button asChild variant="outline" className="border-2 border-flowPink-dark text-flowPink-dark hover:bg-gradient-to-r hover:from-flowPurple-light hover:to-flowPink-light hover:text-white transition-colors">
               <Link to="/myths-facts">Learn More</Link>
             </Button>
           </div>
