@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Home } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
@@ -24,13 +24,10 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full py-4 px-4 md:px-8 bg-white shadow-sm relative z-20">
+    <header className="w-full py-4 px-4 md:px-8 bg-white shadow-sm">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
-          <Home className="w-6 h-6 text-flowPurple-dark" aria-hidden="true" />
-          <span className="text-2xl font-bold text-flowPink-dark">
-            Flow<span className="text-flowPurple-dark">ToGlow</span>
-          </span>
+          <span className="text-2xl font-bold text-flowPink-dark">Flow<span className="text-flowPurple-dark">ToGlow</span></span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -39,7 +36,7 @@ const Header = () => {
             <Link
               key={item.name}
               to={item.path}
-              className="bg-gradient-to-r from-flowPink-dark to-flowPurple-dark bg-clip-text text-transparent font-semibold hover:underline underline-offset-4 transition-all"
+              className="text-gray-800 hover:text-flowPink-dark transition-colors font-medium"
             >
               {item.name}
             </Link>
@@ -48,7 +45,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 text-flowPurple-dark"
+          className="md:hidden p-2 text-gray-800"
           onClick={toggleMenu}
           aria-label="Toggle Menu"
         >
@@ -64,7 +61,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className="text-flowPink-dark font-semibold py-2 border-b border-gray-100"
+                className="text-gray-800 hover:text-flowPink-dark py-2 border-b border-gray-100"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
@@ -78,4 +75,3 @@ const Header = () => {
 };
 
 export default Header;
-
