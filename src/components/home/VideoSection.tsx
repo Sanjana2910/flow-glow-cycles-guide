@@ -1,4 +1,3 @@
-
 import { Youtube, Users, Sparkles, MessageSquare, Handshake, BookHeart, HeartHandshake } from "lucide-react";
 
 const menEducationPoints = [
@@ -35,7 +34,7 @@ const menEducationPoints = [
 const VideoSection = () => {
   return (
     <section className="py-16 bg-flowPink-light/50 px-4 relative overflow-hidden">
-      {/* Animated gradient blobs and floating sparkles for extra color pop */}
+      {/* Extra Animated gradient blobs and floating sparkles for color pop */}
       <span
         className="hidden md:block absolute top-6 left-4 w-64 h-64 rounded-full bg-flowPurple-light blur-3xl opacity-40 animate-float"
         style={{ animationDuration: "4s" }}
@@ -46,15 +45,25 @@ const VideoSection = () => {
         style={{ animationDuration: "5s", animationDelay: "0.8s" }}
         aria-hidden="true"
       />
-      {/* Plus some animated smaller dots/blobs for added activity */}
+      {/* More decorative colorful floating blobs */}
       <span
-        className="absolute left-12 top-32 w-10 h-10 rounded-full bg-[#FEC6A1]/60 blur-lg opacity-80 animate-float z-10"
+        className="absolute left-12 top-32 w-14 h-14 rounded-full bg-[#FEC6A1]/80 blur-2xl opacity-80 animate-float z-10"
         style={{ animationDuration: "2.5s", animationDelay: "1s" }}
         aria-hidden="true"
       />
       <span
-        className="absolute right-24 bottom-16 w-8 h-8 rounded-full bg-[#FEF7CD]/70 blur-md opacity-80 animate-float z-10"
-        style={{ animationDuration: "2.1s", animationDelay: "1.2s" }}
+        className="absolute right-20 bottom-28 w-10 h-10 rounded-full bg-[#FEF7CD]/70 blur-md opacity-90 animate-float"
+        style={{ animationDuration: "4.1s", animationDelay: "1.7s" }}
+        aria-hidden="true"
+      />
+      <span
+        className="absolute left-40 bottom-12 w-12 h-12 rounded-full bg-flowPurple-light/80 blur-xl opacity-80 animate-float"
+        style={{ animationDuration: "3.2s", animationDelay: "1.4s" }}
+        aria-hidden="true"
+      />
+      <span
+        className="absolute right-16 top-24 w-10 h-10 rounded-full bg-flowPink-light/80 blur-lg opacity-80 animate-float"
+        style={{ animationDuration: "4.5s", animationDelay: "2.1s" }}
         aria-hidden="true"
       />
       {/* Sparkles icon as floating accent */}
@@ -64,6 +73,13 @@ const VideoSection = () => {
         aria-hidden="true"
       >
         <Sparkles className="w-16 h-16" />
+      </span>
+      {/* More sparkles */}
+      <span className="absolute right-16 top-8 text-flowPink-dark animate-float" style={{ animationDuration: "9s" }}>
+        <Sparkles className="w-10 h-10 opacity-70" />
+      </span>
+      <span className="absolute left-24 bottom-8 text-flowPurple-dark animate-float" style={{ animationDuration: "8s" }}>
+        <Sparkles className="w-10 h-10 opacity-60" />
       </span>
       <div className="container mx-auto text-center relative z-10">
         <h2 className="text-3xl font-bold text-gray-900 mb-6 animate-fade-in">Watch & Learn</h2>
