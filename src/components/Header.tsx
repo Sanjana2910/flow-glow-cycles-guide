@@ -24,14 +24,14 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full py-4 px-4 md:px-8 bg-white shadow-sm">
+    <header className="w-full py-4 px-4 md:px-8 bg-white shadow-sm relative z-20">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
           <span className="text-2xl font-bold text-flowPink-dark">Flow<span className="text-flowPurple-dark">ToGlow</span></span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-6">
+        <nav className="hidden md:flex gap-6 items-center">
           {menuItems.map((item) => (
             <Link
               key={item.name}
@@ -41,16 +41,23 @@ const Header = () => {
               {item.name}
             </Link>
           ))}
+          <Button 
+            variant="outline" 
+            className="ml-4 border-flowPink-dark text-flowPink-dark hover:bg-flowPink-light"
+          >
+            Get Started
+          </Button>
         </nav>
 
         {/* Mobile Menu Button */}
-        <button
-          className="md:hidden p-2 text-gray-800"
-          onClick={toggleMenu}
+        <Button 
+          variant="ghost" 
+          className="md:hidden p-2" 
+          onClick={toggleMenu} 
           aria-label="Toggle Menu"
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        </Button>
       </div>
 
       {/* Mobile Navigation */}
@@ -67,6 +74,12 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+            <Button 
+              variant="default" 
+              className="w-full bg-gradient-to-r from-flowPink-dark to-flowPurple-dark hover:from-flowPink-light hover:to-flowPurple-light"
+            >
+              Get Started
+            </Button>
           </div>
         </div>
       )}
