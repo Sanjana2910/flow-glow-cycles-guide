@@ -14,6 +14,8 @@ import ForMen from "./pages/ForMen";
 import EcoProducts from "./pages/EcoProducts";
 import MentalHealth from "./pages/MentalHealth";
 import About from "./pages/About";
+import Quiz from "./pages/Quiz";
+import Games from "./pages/Games";
 
 const queryClient = new QueryClient();
 
@@ -33,7 +35,8 @@ const App = () => (
           <Route path="/eco-products" element={<EcoProducts />} />
           <Route path="/mental-health" element={<MentalHealth />} />
           <Route path="/about" element={<About />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/games" element={<Games />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

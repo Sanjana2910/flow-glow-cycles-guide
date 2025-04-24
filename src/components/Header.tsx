@@ -20,6 +20,8 @@ const Header = () => {
     { name: "For Men", path: "/for-men" },
     { name: "Eco Products", path: "/eco-products" },
     { name: "Mental Health", path: "/mental-health" },
+    { name: "Quiz", path: "/quiz" },
+    { name: "Games", path: "/games" },
     { name: "About Us", path: "/about" }
   ];
 
