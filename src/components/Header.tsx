@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -20,8 +19,6 @@ const Header = () => {
     { name: "For Men", path: "/for-men" },
     { name: "Eco Products", path: "/eco-products" },
     { name: "Mental Health", path: "/mental-health" },
-    { name: "Quiz", path: "/quiz" },
-    { name: "Games", path: "/games" },
     { name: "About Us", path: "/about" }
   ];
 

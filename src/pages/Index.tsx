@@ -7,6 +7,7 @@ import FeatureSection from "@/components/home/FeatureSection";
 import VideoSection from "@/components/home/VideoSection";
 import ImagesSection from "@/components/home/ImagesSection";
 import AboutSection from "@/components/home/AboutSection";
+import GamesQuizSection from "@/components/home/GamesQuizSection";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
         <VideoSection />
         <ImagesSection />
         <AboutSection />
+        <GamesQuizSection />
       </main>
 
       <Footer />
